@@ -1,3 +1,3 @@
 # WWW
 web pages designs
-![GitHub Logo](/images/logo.png)
+![Pic](pic1.png)
