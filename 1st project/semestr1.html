@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="headers.css">
+<link rel="stylesheet" type="text/css" href="button.css">
+<title>Moje przygody z edukacją</title>
+<style>
+
+.row {
+border-style: solid;
+border-color: black;
+border-width: 0px 0px 10px 0px;
+}
+
+#second{
+float: right;
+}
+
+#second:hover {
+    transition-duration: 0.4s;
+	box-shadow: -10px 0px 10px 1px #888888
+}
+
+ @media screen and (min-width: 640px) {
+.col-1 {width: 50%;}
+.col-2 {width: 100%;}
+.buttonImage{width: 40px; height: 40px;}
+.button{    padding: 13px 27px;}
+.container{margin-left: 10%; margin-right: 10%;}
+}
+
+
+.footer-col{
+	float: left;
+	width: 50%;
+}
+
+
+ul{
+    font-family: 'Cormorant Garamond', serif;
+    list-style-type: circle;
+	font-size: 20px;
+	}
+
+p {
+	float: left;
+	padding: 5px;
+}
+
+a:link.footer {
+    color: #a35454;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#subtitle {
+    font-family: 'Poiret One', cursive;
+	text-transform: lowercase;
+	text-align: left;
+}
+
+#arrow {
+float: right;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<header> 
+<h1>Ania Modrzejewska</h1>
+<h2 id="subtitle">Semestr 1</h2>
+</header>
+
+<article class="row">
+<header class="red"><h3>Analiza Matematyczna 1</h3></header>
+<div class="col-1">
+<header class="gray">Czego się nauczyłam</header>
+  	<ul>
+	<li>Rachunku różniczkowego i całkowego</li>
+	<li>Czym jest wzór Taylora i jego zastosowania</li>
+	<li>Liczenia granic funkcji metodą d'Hospitala</li>
+	</ul>
+</div>
+
+<div class="col-1">
+<header class="gray">Czego chcę się douczyć</header>
+   	<ul>
+	<li>Jak stosować metodę d'Hospitala do sprawdzania tego, <br> czy f = O(g)</li>
+	</ul>
+</div>
+</article>
+
+<article class="row">
+<header class="red"><h3>Algebra z Geometrią Analityczną</h3></header>
+
+<div class="col-1">
+<header class="gray">Czego się nauczyłam</header>
+	<ul>
+	<li>Czym są grupy, pierścienie i ciała</li>
+	<li>Wykonywać działania matematyczne w niektórych grupach</li>
+	<li>Rozwiązywać równania liniowe metodą eliminacji Gaussa oraz wzorami Cramera</li>
+	</ul>
+</div>
+
+<div class="col-1">
+<header class="gray">Czego chcę się douczyć</header>
+   	<ul>
+	<li>Warto poczytać więcej o przekształceniach liniowych</li>
+	</ul>
+</div>
+</article>
+
+<article class="row">
+<header class="red"><h3>Wstęp do Informatyki i Programowania</h3></header>
+
+<div class="col-1">
+<header class="gray">Czego się nauczyłam</header>
+ 	<ul>
+	<li>Składni języka C</li>
+	<li>Jak działają wskaźniki</li>
+	<li>Używania malloca</li>
+	<li>Notacji duże O</li>
+	</ul>
+</div>
+
+<div class="col-1">
+<header class="gray">Czego chcę się douczyć</header>
+   	<ul>
+	<li>Poznać więcej algorytmów rekurencyjnych i dokładnie przeanalizować ich działanie</li>
+	</ul>
+</div>
+</article>
+
+<article class="row">
+<header class="red"><h3>Logika i Struktury Formalne</h3></header>
+
+<div class="col-1">
+<header class="gray">Czego się nauczyłam</header>
+ 	<ul>
+	<li>Stwierdzać, czy zbiór jest mocy Alef Zero lub Continuum</li>
+	<li>Czym są relacje i klasy</li>
+	<li>Zapisywać formuły używając kwantyfikatorów</li>
+	</ul>
+</div>
+
+<div class="col-1">
+<header class="gray">Czego chcę się douczyć</header>
+   	<ul>
+	<li>Przypomnieć sobie aksjomaty Peano</li>
+	</ul>
+</div>
+</article>
+
+<footer>
+<div class=row>
+<div class="footer-col">
+	<a href="home.html" class=button> <img src="home.png" alt="Home" class="buttonImage"></a><p>Strona główna</p>
+</div>
+<div class="footer-col">
+	<a href="semestr2.html" class=button id="second"> <img src="arrow.png" alt="Next" class="buttonImage"></a><p id=arrow>Semestr II</p>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="headers.css">
+<link rel="stylesheet" type="text/css" href="button.css">
+<title>Moje przygody z edukacją</title>
+<style>
+
+.row {
+border-style: solid;
+border-color: black;
+border-width: 0px 0px 10px 0px;
+}
+
+#second{
+float: right;
+}
+
+#second:hover {
+    transition-duration: 0.4s;
+	box-shadow: -10px 0px 10px 1px #888888
+}
+
+ @media screen and (min-width: 640px) {
+.col-1 {width: 50%;}
+.col-2 {width: 100%;}
+.buttonImage{width: 40px; height: 40px;}
+.button{    padding: 13px 27px;}
+.container{margin-left: 10%; margin-right: 10%;}
+}
+
+
+.footer-col{
+	float: left;
+	width: 50%;
+}
+
+
+ul{
+    font-family: 'Cormorant Garamond', serif;
+    list-style-type: circle;
+	font-size: 20px;
+	}
+
+p {
+	float: left;
+	padding: 5px;
+}
+
+a:link.footer {
+    color: #a35454;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#subtitle {
+    font-family: 'Poiret One', cursive;
+	text-transform: lowercase;
+	text-align: left;
+}
+
+#arrow {
+float: right;
+}
+
+h3 {
+padding: 0;
+margin: 0;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<header> 
+<h1>Ania Modrzejewska</h1>
+<h2 id="subtitle">Semestr 2</h2>
+</header>
+
+<article class="row">
+<header class="red"><h3>Analiza Matematyczna 2</h3></header>
+<div class="col-1">
+<header class="gray">Czego się nauczyłam</header>
+  	<ul>
+	<li>Rachunku różniczkowego i całkowego funkcji wielu zmiennych</li>
+	<li>Liczyć za pomocą całkowania powierzchnię skomplikowanych brył</li>
+	<li>Liczenia granic funkcji metodą d'Hospitala</li>
+	</ul>
+</div>
+
+<div class="col-1">
+<header class="gray">Czego chcę się douczyć</header>
+ 	<ul>
+	<li>Jak korzystać z mnożników Lagrange'a przy wyliczaniu ekstremum warunkowego</li>
+	</ul>
+</div>
+</article>
+
+<article class="row">
+<header class="red"><h3>Kurs Programowania</h3></header>
+
+<div class="col-1">
+<header class="gray">Czego się nauczyłam</header>
+	<ul>
+	<li>Implementowania drzewa binarnego</li>
+	<li>Do czego służy typ wyliczeniowy Enum</li>
+	<li>Tworzenia apletu z funkcjonalnością prostego Painta</li>
+	<li>Jak działają wątki w Javie</li>
+	</ul>
+</div>
+
+<div class="col-1">
+<header class="gray">Czego chcę się douczyć</header>
+  	<ul>
+	<li>Dokładniej prześledzić wymagania dotyczące pisania komentarzy i generowania dokumentacji</li>
+	</ul>
+</div>
+</article>
+
+<article class="row">
+<header class="red"><h3>Matematyka Dyskretna</h3></header>
+
+<div class="col-1">
+<header class="gray">Czego się nauczyłam</header>
+ 	<ul>
+	<li>Klas kombinatorycznych</li>
+	<li>Funckji tworzących</li>
+	<li>Operacji na permutacjach</li>
+	</ul>
+</div>
+
+<div class="col-1">
+<header class="gray">Czego chcę się douczyć</header>
+ 	<ul>
+	<li>Dowiedzieć się więcej na temat własności liczb Stirlinga</li>
+	</ul>
+</div>
+</article>
+
+<article class="row">
+<header class="red"><h3>Algebra Abstrakcyjna i Kodowanie</h3></header>
+
+<div class="col-1">
+<header class="gray">Czego się nauczyłam</header>
+ 	<ul>
+	<li>Stwierdzać, czy zbiór z danym działaniem tworzy grupę</li>
+	<li>Stwierdzić, czy zbiór z danymi działaniami tworzy pierścień</li>
+	<li>Rozwiązywać układy kongruencji przy pomocy chińskiego twierdzenia o resztach</li>
+	</ul>
+</div>
+
+<div class="col-1">
+<header class="gray">Czego chcę się douczyć</header>
+ 	<ul>
+	<li>Doczytać, jak liczyć długość Hamminga kodu liniowego</li>
+	</ul>
+</div>
+</article>
+
+<footer>
+<div class=row>
+<div class="footer-col">
+	<a href="home.html" class=button> <img src="home.png" alt="Home" class="buttonImage"></a><p>Strona główna</p>
+</div>
+<div class="footer-col">
+	<a href="semestr3.html" class=button id="second"> <img src="arrow.png" alt="Next" class="buttonImage"></a><p id=arrow>Semestr III</p>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sztuka</title>
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="headers.css">
+<link rel="stylesheet" type="text/css" href="button.css">
+<style>
+
+[class*='col-'] {
+     padding: 15px;
+   } 
+   
+.container{
+	background-color: #e9ece5;
+	margin: 0 auto;
+}
+
+.imgcontainer {
+  position: relative;
+  width: 100%;
+}
+
+.myImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #9eafac;
+}
+
+.imgcontainer:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+    font-family: 'Cormorant Garamond', serif;
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+ @media screen and (min-width: 770px) {
+.col-1 {width: 33%;}
+.col-2 {width: 66%;}
+.col-3 {width: 100%;}
+.text {font-size: 20px;}
+.button{    padding: 13px 27px;}
+.buttonImage{width: 40px; height: 40px;}
+.container{margin-left: 10%; margin-right: 10%;}
+}
+
+
+
+#subtitle {
+	text-transform: lowercase;
+	text-align: left;
+}
+
+h3 {
+	line-height: 90%;
+	padding: 0;
+	margin: 0;
+  }
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+
+mark {
+    background-color: transparent;
+    color: #a35454;
+	font-weight: 700;
+
+}
+
+.film {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: #d3d6cf;
+}
+
+.description{
+padding:10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+ul{
+padding-top: 15px;
+padding-bottom: 15px;
+	margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+    list-style-type: circle;
+	font-size: 20px;
+}
+
+p.boom {
+	margin-top: 10px;
+	background-color: #a35454;
+	text-align: center;
+}
+
+footer {
+padding: 0;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<header> 
+<h1>Ania Modrzejewska</h1>
+<h2 id="subtitle">sztuka</h2>
+</header>
+
+<div class="row">
+	<section class="col-2"><header class="red"><h3>Ulubieni artyści</h3></header>
+		<article class="film">
+			<header class="gray">
+				<h3>Jacek Malczewski</h3>
+			</header>
+			<div class="description">
+				<p>„Malujcie tak, by Polska zmartwychwstała” – tak, jak głosi anegdota, <mark>Jacek Malczewski</mark> strofował swoich uczniów, kiedy wychodził z konsultacji ich malarskich prac. Sam był twórcą zaangażowanym, jego obrazy przepełnione są romantyczną martyrologią i patriotycznymi ideałami. Mówił o sobie: „Gdybym nie był Polakiem, nie byłbym artystą”</p>
+				<p class="boom">ur. 1854, zm. 1929</p>
+			</div>
+		</article>
+		<article class="film">
+			<header class="gray">
+				<h3>Vincent van Gogh</h3>
+			</header>
+			<div class="description">
+				<p>Ruda bródka, melancholijne spojrzenie zielonych, zmęczonych oczu i poważna twarz. Wariat o trzeźwym spojrzeniu na rzeczywistość. Biedak z filantropijnym usposobieniem. Kaznodzieja, wygłaszający płomienne kazania i romantyk, dla którego rodzina i relacje ważniejsze były od czegokolwiek innego. Wizjoner zapatrzony w klasykę i przeszłość. <mark>Vincent van Gogh</mark> – artysta o wielu twarzach.</p>
+				<p class="boom">ur. 1853, zm. 1890</p>
+			</div>
+		</article>
+		<article class="film">
+			<header class="gray">
+				<h3>Edward Hopper</h3>
+			</header>
+			<div class="description">
+				<p>Spokojny i powściągliwy. Niewiele mówił o pracy i życiu, swoje obrazy ukrywając przed opinią widzów i krytyki. <mark>Edward Hopper</mark>, choć sam od ludzi stronił, to właśnie jego malarstwo wydaje się być najlepszym sposobem na poznanie kondycji współczesnego człowieka, którego samotność zdaje się dotykać bardziej niż kiedykolwiek wcześniej.</p>
+				<p class="boom">ur. 1882, zm. 1967</p>
+			</div>
+		</article>
+		<article class="film">
+			<header class="gray">
+				<h3>Edgar Degas</h3>
+			</header>
+			<div class="description">
+				<p>Francuski artysta tworzący dzieła malarskie, rzeźby, grafiki i rysunki. Jest uważany za jednego z impresjonistów, chociaż odrzucił to pojęcie i wolał się nazywać realistą. Wspaniały rysownik szczególnie zainspirowany tańcem, ponad połowa jego prac przedstawia tancerzy, mistrzowskie w opisie ruchu.</p>
+				<p class="boom">ur. 1834, zm. 1917</p>
+			</div>
+		</article>
+
+	</section>
+
+<section class="col-1">
+<header class="red"><h3>Ulubione obrazy</h3></header>
+<div class="film">
+<div class="description">	
+
+	<div class="imgcontainer">
+  <img src="malczewski.jpg" alt="Hamlet Polski" class="myImage">
+  <div class="overlay">
+    <div class="text">&bdquo;Hamlet Polski&rdquo;</div>
+  </div>
+</div>
+<br>
+	<div class="imgcontainer">
+  <img src="vangogh.jpg" alt="Starry Night" class="myImage">
+  <div class="overlay">
+    <div class="text">&bdquo;Starry Night over the Rhône&rdquo;</div>
+  </div>
+</div>
+	<br>
+	<div class="imgcontainer">
+  <img src="nighthawks.png" alt="Nighthawks" class="myImage">
+  <div class="overlay">
+    <div class="text">&bdquo;Nighthawks&rdquo;</div>
+  </div>
+</div>
+<br>
+	<div class="imgcontainer">
+  <img src="degas.jpg" alt="Lekcja Tańca" class="myImage">
+  <div class="overlay">
+    <div class="text">&bdquo;Lekcja Tańca&rdquo;</div>
+  </div>
+</div>	
+</div>
+</div>
+</section>
+
+</div>
+
+<footer>
+<div class="row">
+<div class="col-3">
+<a href="home.html" class=button> <img src="home.png" alt="Home" class="buttonImage"></a><br><p>Strona główna</p></div>
+</div></footer>
+
+</div>
+
+
+</body>
+</html>

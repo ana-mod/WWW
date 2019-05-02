@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filmy</title>
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="headers.css">
+<link rel="stylesheet" type="text/css" href="button.css">
+<style>
+
+[class*='col-'] {
+     padding: 15px;
+   } 
+
+.imgcontainer {
+  position: relative;
+  width: 100%;
+}
+
+.myImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #9eafac;
+}
+
+.imgcontainer:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  font-family: 'Cormorant Garamond', serif;
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+ @media screen and (min-width: 770px) {
+.col-1 {width: 33%;}
+.col-2 {width: 66%;}
+.col-3 {width: 100%;}
+.text {font-size: 20px;}
+.button{    padding: 13px 27px;}
+.buttonImage{width: 40px; height: 40px;}
+.container{margin-left: 10%; margin-right: 10%;}
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.film {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: #d3d6cf;
+}
+
+.description{
+	padding:10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+p.boom {
+	margin-top: 10px;
+	background-color: #a35454;
+	text-align: center;
+}
+
+footer {
+padding: 0;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<header> 
+<h1>Ania Modrzejewska</h1>
+<h2 id="subtitle">Filmy</h2>
+</header>
+
+<div class="row">
+	<section class="col-2"><header class="red"><h3>Filmy, które polecam</h3></header>
+		<article class="film">
+			<header class="gray">
+				<h3>Rushmore</h3>
+			</header>
+			<div class="description">
+				<p>Kradnie serce dziwnością połączoną z prostotą, urokiem i groteskowym humorem, opowiada o życiu 15-letniego Maxa Fischera - pełnego ambicji idealisty, którego pasją jest uczęszczanie do Rushmore Academy (i ma nadzieję realizować ją przez całe życie) oraz o jego przyjacielu - zmęczonego życiem i dwoma zepsutymi synami milionera.</p>
+				<p class="boom">reż. Wes Anderson, 1998</p>
+			</div>
+		</article>
+		<article class="film">
+			<header class="gray">
+				<h3>Leon Zawodowiec</h3>
+			</header>
+			<div class="description">
+				<p>Świetne napisane i zagrane postaci - Leona (Reno), jego subtelność i wrażliwość, mimo że jest płatnym zabójcą; Matyldy (Portman) jej nieprzewidywalność, upór oraz wyjątkowy wdzięk małej dziewczynki; Normana (Oldman - najlepsza drugoplanowa rola w historii kina), jego szaleństwo umysłu, działanie bez skrupułów</p>
+				<p class="boom">reż. Luc Besson, 1994</p>
+			</div>
+		</article>
+		<article class="film">
+			<header class="gray">
+				<h3>Big Lebowski</h3>
+			</header>
+			<div class="description">
+				<p>Główny bohater, wbrew ogólnie panującej modzie i kulturze, wybrał sobie życie bez wyścigu, silenia się na kogoś kim się nie jest, wiecznej rywalizacji i napinania muskułów. Jego życie jest proste, pozbawione luksusów, ale jak by nie patrzeć szczęśliwe. Do momentu, gdy zderza się z postaciami reprezentującymi różne formy patologii, które rządzą współczesnym społeczeństwem</p>
+				<p class="boom">reż. Joel Coen, 1998</p>
+			</div>
+		</article>
+		<article class="film">
+			<header class="gray">
+				<h3>Fight Club</h3>
+			</header>
+			<div class="description">
+				<p>&bdquo;First rule of Fight Club: You do not talk about Fight Club.&rdquo;</p>
+				<p class="boom">reż. David Fincher, 1999</p>
+			</div>
+		</article>
+
+	</section>
+
+<section class="col-1">
+<header class="red"><h3>Filmy, które chcę obejrzeć</h3></header>
+<div class="film">
+<div class="description">	
+
+	<div class="imgcontainer">
+  <img src="pulp.jpg" alt="Pulp Fiction" class="myImage">
+  <div class="overlay">
+    <div class="text">&bdquo;Pulp Fiction&rdquo;</div>
+  </div>
+</div>
+<br>
+	<div class="imgcontainer">
+  <img src="taxi.jpg" alt="Taxi Driver" class="myImage">
+  <div class="overlay">
+    <div class="text">&bdquo;Taksówkarz&rdquo;</div>
+  </div>
+</div>
+	<br>
+	<div class="imgcontainer">
+  <img src="psycho.jpg" alt="American Psycho" class="myImage">
+  <div class="overlay">
+    <div class="text">&bdquo;American Psycho&rdquo;</div>
+  </div>
+</div>
+<br>
+	<div class="imgcontainer">
+  <img src="volver.jpg" alt="Volver" class="myImage">
+  <div class="overlay">
+    <div class="text">&bdquo;Volver&rdquo;</div>
+  </div>
+</div>
+<br>
+	<div class="imgcontainer">
+  <img src="manhattan.jpg" alt="Manhattan" class="myImage">
+  <div class="overlay">
+    <div class="text">&bdquo;Manhattan&rdquo;</div>
+  </div>
+</div>	
+</div>
+</div>
+</section>
+
+</div>
+
+<footer>
+<div class="row">
+<div class="col-3">
+<a href="home.html" class=button> <img src="home.png" alt="Home" class="buttonImage"></a><br><p>Strona główna</p></div>
+</div></footer>
+
+</div>
+
+
+</body>
+</html>
