@@ -1,3 +1,3 @@
 # WWW
-web pages designs
+responsive web pages designs
 ![Pic](pic1.png)
